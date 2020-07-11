@@ -201,7 +201,7 @@ function startsWithK(obj){
 
 function hiddenTreasure(obj) {
   for (let prop in obj) {
-    if (obj[prop].includes(`treasure`)) {
+    if (!obj[prop].includes(`treasure`)) {
       delete obj[prop]
     }
   }
